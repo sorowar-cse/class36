@@ -18,12 +18,12 @@ body {
 
 /*     header style end*/
 /*     navigaton style start*/
-div.nav {
+.nav {
     overflow: hidden;
     background-color: #191817;
 }
 
-a {
+.nav a {
     display: block;
     float: left;
     padding: 20px 30px;
@@ -37,7 +37,7 @@ a {
     color: #6c5f50;
 }
 
-a:hover {
+.nav a:hover {
     color: #433f0d;
     background-color: #dbd479;
 }
@@ -91,18 +91,26 @@ h3{
 h5{
       color:#31245e;
 }
-/*Responsive layout ---- when the screen is less than 800px px wide*/
-@media screen and (max-width:800px){
-    .leftcolumn, .rightcolumn{
+
+
+/* Media Query Section Start Here  */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
         width: 100%;
         padding: 0;
+        text-align: center;
     }
 }
-/*Responsive layout ---- when the screen is less than 705 px wide*/
-@media screen and (max-width: 705px){
-    .nav a{
+
+@media screen and (max-width: 600px) {
+    .nav a {
         float: none;
-        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .nav #right {
+        float: none;
+        display: block;
         text-align: center;
     }
 }
